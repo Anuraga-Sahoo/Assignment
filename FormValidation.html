@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form validation in HTML </title>
+</head>
+<body>
+  <h1>Form Validation through HTML </h1>
+  <hr>
+  <!-- Required field -->
+   <h2 style="color: red;">note : wrap all the input tag with in form tag</h2>
+   <h3>Required Attribute</h3>
+   <p> <pre>
+    It is used for make a input required . 
+    if we did not put any input then it shows you "that field is required" </pre></p>
+   <h4>How to use </h4>
+   <form action="">
+    <table>
+      <tbody>
+        <tr>
+          <td>Enter your name</td>
+          <td><input type="text" required></td>
+          <td><input type="submit"> </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  <hr>
+
+  <!-- Read only -->
+   <h3>readonly</h3>
+   <p><pre> 
+    Readonly is used when you want to show anything to the user in a tag but user can not select it. 
+    user only read that data which you provide </pre> </p>
+   <h4>How to use </h4>
+   <form action="">
+    <table>
+    <tbody>
+      <tr>
+        <td>Enter your name</td>
+        <td><input type="text" value="you can read the data only. can't edit" readonly></td>
+        
+      </tr>
+    </tbody>
+  </table>
+   </form>
+   <hr>
+
+   <!-- Value -->
+   <h3>Value</h3>
+   <p> <pre>you put default value before user input </pre></p>
+   <h4>how to use</h4>
+   <form action="">
+     <table>
+     <tbody>
+       <tr>
+         <td>Enter price</td>
+         <td><input type="number" value="2000 "></td>
+         
+       </tr>
+     </tbody>
+   </table>
+    </form>
+    <hr>
+
+   <!-- Disabled -->
+    <h3>Disabled</h3>
+    <p><pre>if you use disabled you can not select that tag/tab </pre> </p>
+    <h4>How to use</h4>
+    <form action="">
+      <table>
+      <tbody>
+        <tr>
+          <td>Enter your name</td>
+          <td><input type="text" value="you can select this tab" disabled></td>
+          
+        </tr>
+      </tbody>
+    </table>
+     </form>
+     <hr>
+
+     <!-- placeholder -->
+     <h3>placeholder</h3>
+     <p><pre>it provides the additional information to the user</pre></p>
+     <h4>how to use</h4>
+     <form action="">
+       <table>
+       <tbody>
+         <tr>
+           <td>Enter your name</td>
+           <td><input type="text" placeholder="Enter your name"></td>
+           <td><input type="submit" value="Submit"></td>
+         </tr>
+       </tbody>
+     </table>
+      </form>
+      <hr>
+
+      <!-- min max -->
+      <h3>Min Max</h3>
+    <p> <pre>
+      you can enter the value within the range . 
+      it applies on input type number only. 
+      you cant enter number outside the range </pre></p>
+    <p>example:- if you have a fruite store and you want customer buy the fruit in kg in between 0 to 10 kg (range) then you use min max</p>
+    <h4>how to use</h4>
+    <form action="">
+      <table>
+      <tbody>
+        <tr>
+          <td>Enter kg</td>
+          <td><input type="number" min="0" max="10" ></td>
+          <td><input type="submit" value="Submit"></td>
+        </tr>
+      </tbody>
+    </table>
+     </form>
+     <hr>
+
+     <!-- Minlength maxlength -->
+     <h3>Minlength maxlength</h3>
+     <p><pre>
+       it is used when we want to collet user input in between range like 0-9 word like this.
+       it used on input type text only
+     </pre></p>
+     <h4>How to use</h4>
+     <form action="">
+       <table>
+       <tbody>
+         <tr>
+           <td>Enter your password</td>
+           <td><input type="text" placeholder="Enter your password" minlength="0" maxlength="9"></td>
+           <td><input type="submit" value="Submit"></td>
+         </tr>
+       </tbody>
+     </table>
+      </form>
+      <hr>
+
+      <!-- name -->
+      <h3>Name</h3>
+      <p><pre>
+        The name attribute specifies the name of an input element.
+        The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.</pre></p>
+      <h4>how to use</h4>
+      <form action="">
+        <table>
+        <tbody>
+          <tr>
+            <td>Enter your name</td>
+            <td><input type="text" name="input-name"></td>
+            <td><input type="submit" name="Submit"></td>
+          </tr>
+        </tbody>
+      </table>
+       </form>
+       <hr>
+
+       <!-- id -->
+       <h3>Id</h3>
+       <p><pre>
+        it  is a javascript dom selector. 
+        it used to select the elemet in java script through id.
+        and it is unique.
+      </pre></p>
+       <h4>how to use</h4>
+       <form action="">
+         <table id="table">
+         <tbody id="table-body">
+           <tr>
+             <td>Enter your name</td>
+             <td><input type="text" id="input-name"></td>
+             
+           </tr>
+         </tbody>
+       </table>
+        </form>
+        <hr>
+
+          <!-- class -->
+       <h3>class</h3>
+       <p><pre>
+        it  is a javascript dom selector. 
+        it used to select the elemet in java script through class.
+        class must be same in many input tags or any other tags and elements
+      </pre></p>
+       <h4>how to use</h4>
+       <form action="">
+         <table class="table">
+         <tbody>
+           <tr class="table">
+             <td class="hero-name">Enter your name</td>
+             <td><input type="text" class="input-name"></td>
+           </tr>
+         </tbody>
+       </table>
+        </form>
+        <hr>
+
+        <!-- tab index -->
+       <h3>tabindex</h3>
+       <p><pre>
+        The tabindex attribute specifies the tab order of an element 
+        (when the "tab" button is used for navigating).
+        The tabindex attribute can be used on any HTML element 
+        (it will validate on any HTML element. However, it is not necessarily useful).
+      </pre></p>
+       <h4>how to use : press tab buttion</h4>
+       <div tabindex="1">W3Schools</div><br>
+       <div tabindex="3">Google</div><br>
+       <div tabindex="2">Microsoft</div>
+       <a href='#' tabindex='1' >hello</a>
+        <hr>
+
+          <!-- pattern -->
+           <h1>Doubt</h1>
+       <h3>pattern</h3>
+       <p><pre>
+        it  is a javascript dom selector. 
+        it used to select the elemet in java script through id.
+      </pre></p>
+       <h4>how to use</h4>
+       <form action="/action_page.php">
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+        <input type="submit">
+      </form>
+        <hr>
+  
+</body>
+</html>
