@@ -3,9 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment</title>
+  <title>Assignment form Validation clint side</title>
 </head>
 <body>
-  
+  <form action="">
+    <h1>
+      Html  Form 
+    </h1>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          Your Name
+        </td>
+        <td>
+        <input type="text" name="" id="" placeholder="Enter your name" required minlength="5" maxlength="9">
+        </td>
+    </tr>
+    <tr>
+      <td>
+        Enter your Number
+      </td>
+      <td>
+        <!-- practice pattern doubt in pattern -->
+        <input type="number"  pattern="{9}" required placeholder="Enter your number" >
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Select your Gender
+      </td>
+      <td>
+        <input type="radio" name="xyz" required/> Male
+        <input type="radio" name="xyz" required/> Female
+      </td>
+    </tr>
+    <tr>
+      <td>
+        readonly type
+      </td>
+      <td>
+        <input type="text" name="readonlye" id="readonlye" readonly placeholder="----readonly---- ">
+      </td>
+    </tr>
+    <tr>
+      <td>Disabled type</td>
+      <td><input type="text" name="" id="" disabled></td>
+      <td><input type="text" value="Nepal" disabled/></td>
+    </tr>
+    <tr>
+      <td>
+        Select State
+      </td>
+      <td>
+        <select name="" id="" required>
+          <option value="Select">Select</option>
+          <option value="">Odisha</option>
+          <option value="">Karnataka</option>
+          <option value="">Mp</option>
+          <option value="">UP</option>
+          <option value="">Delhi</option>
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Enter Price 2000-5000</td>
+      <td><input type="number" required min="2000" max="5000"></td>
+    </tr>
+
+    
+
+
+    <tr>
+      <td>
+
+      </td>
+      <td>
+      <input type="submit" value="Submit"> 
+      </td>
+    </tr>
+
+    </tbody>
+
+  </table>
+</form>
 </body>
 </html>
