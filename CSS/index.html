@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* h1{
+      background-color: red;
+    } */
+     h4{
+      background-color: yellow;
+     }
+    </style>
+    <link rel="stylesheet" href="./index.css">  
+  <title>css selector</title>
+</head>
+<body>
+  <!-- <h1 style="background-color: green;">Good morning</h1> -->
+  <!-- rule:-1 - nearest style have highest priority -->
+
+  <!-- group of stylees is called css selactor-->
+   <h2>tag /element selector</h2>
+
+   <h3>tag /element selector</h3>
+   <p>Lorem ipsum dolor sit amet.</p>
+
+   <h1 class="heading1">Class selector</h1>
+
+   <h1 id="headingID">Id selector</h1>
+
+   <!-- /*--------------- selector specificity--------------->
+    <!-- rule no : -2  -- selector specificity -->
+   <h4 style="background-color: green;" id="xyz" class="abc"> inline (1000) > id (100) > class (10) > tag/Class (1) </h4>
+   <!-- without style="background-color: green;" -->
+   <h4 id="xyz" class="abc"> inline (1000) > id (100) > class (10) > tag/Class (1) </h4>
+   <!-- without id="xyz" -->
+   <h4  class="abc"> inline (1000) > id (100) > class (10) > tag/Class (1) </h4>
+   
+ 
+   
+</body>
+</html>
