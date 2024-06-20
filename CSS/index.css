@@ -1,0 +1,44 @@
+/* h1{
+  background-color: blue;
+} */
+
+/* type of css selector
+      1- tag / element selector 
+      2-group of tags and elements selector
+      3-class selector(.)
+      4-id selector (#)
+      5-group of tag/class and id selector
+      6-universal selector(*)
+      7-attribute selector([])
+ */
+
+/* tag and element selector */
+h2{
+  color: green;
+}
+/* group of tag and element selector */
+p,h3{
+  background-color: red;
+}
+/* class selector */
+
+.heading1{
+  color : blue
+}
+
+/* id selector */
+#headingID{
+  color: blueviolet;
+}
+
+/*------------------------ selector specificity----------------- */
+
+h4{
+  background-color: red;
+}
+.abc{
+  background-color: blue;
+}
+#xyz{
+  background-color: pink;
+}
