@@ -31,6 +31,10 @@ p,h3{
   color: blueviolet;
 }
 
+/* Attribute selector */
+a[target]{
+  color: yellow;
+}
 /*------------------------ selector specificity----------------- */
 
 h4{
