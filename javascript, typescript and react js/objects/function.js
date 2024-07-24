@@ -1,26 +1,23 @@
 class Account {
-  openAccount () {
-    console.log("Account oppen")
+  openAccount() {
+    console.log("Account oppen");
   }
-  deposit () {
-    console.log("Money Deposited")
+  deposit() {
+    console.log("Money Deposited");
   }
-  withdraw () {
-    console.log("Insufficient balance")
+  withdraw() {
+    console.log("Insufficient balance");
   }
-  getBalance () {
-    console.log(" balance")
+  getBalance() {
+    return 10000000;
   }
-  closeAccount () {
-    console.log("Account closed")
+  closeAccount() {
+    console.log("Account closed");
   }
 }
 
-let user = new Account()
+let user = new Account();
 
-console.log(user)
-console.log(user.openAccount())
-console.log(user.deposit())
-console.log(user.withdraw())
+user.openAccount();
+user.deposit();
 console.log(user.getBalance())
-console.log(user.closeAccount())
