@@ -4,3 +4,4 @@ let discount = 5
 // es5
 // module.exports = tax;
 
+module.exports = discount
