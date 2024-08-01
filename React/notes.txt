@@ -1,0 +1,22 @@
+1. What is npm and why we use npm ?
+-> npm stands for node package manager
+-> npm is used to download packages or dependencies remote to local machine
+
+2. what is npx
+-> npx stand for node package execute
+
+steps to create react app
+
+using npx 
+npx create-react-app react5
+cd react5
+npm start
+
+with npm
+npm i create-react-app
+create-react-app my-app
+cd my-app
+npm start
+
+
+
