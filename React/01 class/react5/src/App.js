@@ -1,14 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Message from "./components/Message";
+import Slider from "./components/Slider";
+import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello React</h1>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return<>
+      <Navbar/>
+      <Slider/>
+      <h2>App- component</h2>
+      <h3>Article part</h3>
+      <Message/>
+      <Footer/>
+    </>
+  }
 }
 
-export default App;
+export default App
