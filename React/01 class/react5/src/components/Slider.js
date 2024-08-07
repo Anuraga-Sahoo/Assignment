@@ -3,10 +3,13 @@ import React, { Component } from 'react'
 export class Slider extends Component {
   render() {
     return (
-      <div>
+      <>
        <h1>Slider</h1>
-        <img src='/a.png' width="200px" height="100px"/>
-      </div>
+        <img src='./a.png' alt='hello'/>
+        {
+          console.log("hello","<h1></h1>")
+        }
+      </>
     )
   }
 }
