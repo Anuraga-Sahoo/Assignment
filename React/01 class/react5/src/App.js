@@ -9,6 +9,7 @@ import Product from "./components/Product"
 import Card from "./components/Card";
 import { Greeting } from "./components/Greeting.jsx";
 import Counter from "./components/Counter";
+import Style from "./components/Style.jsx";
 
 class App extends React.Component{
   render(){
@@ -23,8 +24,9 @@ class App extends React.Component{
       <Users idname="13" name = "Anuraga Sahoo"/> */}
       {/* <Product/> */}
       {/* <Card/> */}
-      <Greeting/>
-      <Counter/>
+      {/* <Greeting/>
+      <Counter/> */}
+      <Style/>
     </>
   }
 }
