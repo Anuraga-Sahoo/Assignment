@@ -1,0 +1,37 @@
+es5 export and import syntax
+-----------------------------
+in file one.js
+let a = 100
+module.exports = a
+
+in file two.js
+cost a = require('./one.js)
+clg(a)
+
+------------------------------
+es6 export and import
+
+step1 run npm init or npm init -y
+step2 add "type":"module" in package.json
+
+one.js
+------
+then let a = 200
+export default a
+
+two.js
+------
+import a from './one.js'
+clg(a)
+
+
+How to use named export and named import
+
+
+
+
+
+Node js Asynchronous programming
+1. callback -> passing function as a argument
+2. Promise
+3. async await

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Detector</title>
+  </head>
+  <body>
+    <h1 id="heading">Detecting OS...</h1>
+    <script>
+      // Client-side code (browser)
+      let platform = navigator.platform;
+
+      if (platform.includes("Win")) {
+        document.getElementById("heading").innerText = "Windows";
+      } else if (platform.includes("Mac")) {
+        document.getElementById("heading").innerText = "Mac";
+      } else if (platform.includes("Linux")) {
+        document.getElementById("heading").innerText = "Linux";
+      } else {
+        document.getElementById("heading").innerText = "Unknown OS";
+      }
+    </script>
+  </body>
+</html>

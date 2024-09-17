@@ -1,0 +1,18 @@
+How to install redux dependencies
+step 1
+-> npm i redux react-redux @redux-devtools/extension
+
+
+Hooks
+
+useState()
+useEffect()
+useRef()
+usememo()
+useCallback()
+useparams()
+useNavigate()
+useSelector()
+useDispatch()
+useContext()
+useReducer()
