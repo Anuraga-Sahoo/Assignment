@@ -18,8 +18,12 @@
 import express from 'express'
 import path from 'path'
 import { cwd } from 'process'
+import morgan from 'morgan'
+
 
 const  app = express()
+
+app.use(morgan('dev'))
 
  app.get('/', (req, res) => {
     res.sendFile(path.join(cwd(),'/views/index.html'))

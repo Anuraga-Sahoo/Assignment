@@ -35,3 +35,12 @@ Node js Asynchronous programming
 1. callback -> passing function as a argument
 2. Promise
 3. async await
+
+morgan
+------------------------------------------
+
+why use morgan
+-> morgan is use for write the loggor of http rrequest
+-> like if we click on /contact it print 'GET /contact' like this
+
+app.use(morgan('tiny))
