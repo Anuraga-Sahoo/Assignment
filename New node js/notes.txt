@@ -44,3 +44,9 @@ why use morgan
 -> like if we click on /contact it print 'GET /contact' like this
 
 app.use(morgan('tiny))
+
+Router 
+----------------
+Router is use for create multiple route in one file
+
+if the router url is same but methode type is different then all the url is work 
