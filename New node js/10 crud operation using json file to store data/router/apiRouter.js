@@ -48,7 +48,7 @@ let id = req.params.id
 
  let employeeIndex = employees.findIndex(employee => employee.id === id)
  if(employeeIndex === -1) {
-  res.status(500).json({message: "Wrong id", success: false})
+  res.status(401).json({message: "Wrong id", success: false})
  }
  else{
   employees[employeeIndex] = {...employees[employeeIndex], name, email}
@@ -62,8 +62,6 @@ let id = req.params.id
     res.status(200).json({message: "data updated success fully", success: true, updatedData : employees})
   }
 })
-
-
 })
 
 // delete employee router
@@ -79,6 +77,7 @@ router.delete('/delete/:id', async (req, res) => {
       res.status(500).json({ message: `Error occured${err}`, success: false })
     }
     else{
+      
       res.status(200).json({ message: "employee deleted successfully", success: true, data: employees})
     }
   })

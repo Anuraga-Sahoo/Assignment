@@ -50,3 +50,11 @@ Router
 Router is use for create multiple route in one file
 
 if the router url is same but methode type is different then all the url is work 
+
+3rd party packages
+--------------------------------
+express, dotenv, nodemon, morgan, chalk, jwt, bcrypt
+
+inbuilt
+--------------------------------
+fs, os , http, path, etc
